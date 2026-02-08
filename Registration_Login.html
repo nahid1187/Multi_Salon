@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon System | Login & Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form - Visible by default -->
+        <div class="form-box active" id="loginBox">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input id="loginEmail" type="email" placeholder="Email" required />
+                <input id="loginPassword" type="password" placeholder="Password" required />
+                
+                <div class="show-password">
+                    <input type="checkbox" id="showPasswordLogin">
+                    <label for="showPasswordLogin">Show Password</label>
+                </div>
+                
+                <button type="submit">Login</button>
+                <p class="switch-text">Don't have account? <span class="switch-link" id="showRegister">Register</span></p>
+            </form>
+            <div id="loginMessage" class="message"></div>
+        </div>
+
+        <!-- Register Form - Hidden by default -->
+        <div class="form-box" id="registerBox">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input id="name" type="text" placeholder="Full Name" required />
+                <input id="email" type="email" placeholder="Email" required />
+                <input id="password" type="password" placeholder="Password" required />
+                
+                <div class="show-password">
+                    <input type="checkbox" id="showPasswordRegister">
+                    <label for="showPasswordRegister">Show Password</label>
+                </div>
+                
+                <select id="role">
+                    <option value="customer">Customer</option>
+                    <option value="salon">Salon Owner</option>
+                    <option value="stylist">Stylist</option>
+                </select>
+                
+                <button type="submit">Register</button>
+                <p class="switch-text">Already have account? <span class="switch-link" id="showLogin">Login</span></p>
+            </form>
+            <div id="registerMessage" class="message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
