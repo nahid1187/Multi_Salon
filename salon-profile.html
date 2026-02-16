@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salon Profile</title>
+     <link rel="stylesheet" href="salon-profile.css"></head>
+<body>
+
+<header>
+    <h2>My Salon Profile</h2>
+    <p>Manage your salon details</p>
+</header>
+
+<div class="container">
+    <input type="text" id="salonName" placeholder="Salon Name">
+    <input type="text" id="location" placeholder="Location">
+
+    <h3>Add Service</h3>
+    <input type="text" id="serviceName" placeholder="Service Name">
+    <input type="number" id="servicePrice" placeholder="Price">
+    <button onclick="addService()">Add Service</button>
+
+    <ul id="serviceList"></ul>
+
+    <button onclick="saveSalon()">Save Salon Profile</button>
+</div>
+
+<script src="salon-profile.js"></script>
+</body>
+</html>

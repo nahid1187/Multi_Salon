@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="book-appointment.css">
+</head>
+<body>
+
+<header>
+    <h2>Book Appointment</h2>
+    <p>Select salon, service and time</p>
+</header>
+
+<div class="container">
+
+    <label>Salon</label>
+    <select id="salonSelect" onchange="loadServices()"></select>
+
+    <label>Service</label>
+    <select id="serviceSelect"></select>
+
+    <label>Date</label>
+    <input type="date" id="dateSelect">
+
+    <label>Time</label>
+    <input type="time" id="timeSelect">
+
+    <button onclick="bookAppointment()">Book Appointment</button>
+
+</div>
+
+<script src="book-appointment.js"></script>
+</body>
+</html>

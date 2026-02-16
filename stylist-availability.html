@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stylist Availability</title>
+    <link rel="stylesheet" href="stylist-availability.css">
+</head>
+<body>
+
+<header>
+    <h2>Set Availability</h2>
+    <p>Choose your working days and time</p>
+</header>
+
+<div class="container">
+    <h3>Working Days</h3>
+
+    <div class="days">
+        <label><input type="checkbox" value="Monday"> Monday</label>
+        <label><input type="checkbox" value="Tuesday"> Tuesday</label>
+        <label><input type="checkbox" value="Wednesday"> Wednesday</label>
+        <label><input type="checkbox" value="Thursday"> Thursday</label>
+        <label><input type="checkbox" value="Friday"> Friday</label>
+        <label><input type="checkbox" value="Saturday"> Saturday</label>
+        <label><input type="checkbox" value="Sunday"> Sunday</label>
+    </div>
+
+    <h3>Working Time</h3>
+
+    <input type="time" id="startTime">
+    <input type="time" id="endTime">
+
+    <button onclick="saveAvailability()">Save Availability</button>
+</div>
+
+<script src="stylist-availability.js"></script>
+</body>
+</html>

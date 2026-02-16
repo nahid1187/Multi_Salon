@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    background: white;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.days label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}

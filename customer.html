@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<header>
+    <h2>Customer Dashboard</h2>
+    <p>Welcome, <span id="username"></span>!</p>
+</header>
+
+<div class="container">
+    <div class="card" onclick="window.location.href='search-salon.html'">
+        🔍 Search Salon
+    </div>
+
+    <div class="card" onclick="window.location.href='book-appointment.html'">
+        📅 Book Appointment
+    </div>
+
+    <div class="card" onclick="alert('Coming Soon: Loyalty Points')">
+        ⭐ View Loyalty Points
+    </div>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

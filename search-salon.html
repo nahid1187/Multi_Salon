@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Salon</title>
+    <link rel="stylesheet" href="search-salon.css">
+</head>
+<body>
+
+<header>
+    <h2>Find a Salon</h2>
+    <p>Choose the best salon for you</p>
+</header>
+
+<div class="container">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search salon by name..."
+        onkeyup="searchSalon()"
+    >
+
+    <div id="salonList"></div>
+</div>
+
+<script src="search-salon.js"></script>
+</body>
+</html>
