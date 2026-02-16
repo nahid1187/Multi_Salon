@@ -19,18 +19,17 @@ body {
     max-width: 400px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     overflow: hidden;
-    position: relative;
 }
 
 .form-box {
     padding: 40px;
-    display: none; /* Hide all forms by default */
+    display: none;
 }
 
 .form-box.active {
-    display: block; /* Show only active form */
+    display: block;
     animation: fadeIn 0.5s;
 }
 
@@ -43,12 +42,11 @@ h2 {
     text-align: center;
     color: #333;
     margin-bottom: 30px;
-    font-size: 24px;
 }
 
-input, select, button {
+input, select {
     width: 100%;
-    padding: 12px 15px;
+    padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -58,37 +56,35 @@ input, select, button {
 input:focus, select:focus {
     outline: none;
     border-color: #667eea;
-    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
 }
 
 button {
+    width: 100%;
+    padding: 12px;
     background: linear-gradient(to right, #667eea, #764ba2);
     color: white;
     border: none;
-    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
     margin-top: 10px;
-    transition: 0.3s;
 }
 
 button:hover {
     opacity: 0.9;
 }
 
-.switch-text {
+p {
     text-align: center;
     margin-top: 20px;
     color: #666;
 }
 
-.switch-link {
+span {
     color: #667eea;
-    text-decoration: none;
     font-weight: bold;
     cursor: pointer;
-}
-
-.switch-link:hover {
     text-decoration: underline;
 }
 
@@ -104,29 +100,24 @@ button:hover {
     background: #d4edda;
     color: #155724;
     border: 1px solid #c3e6cb;
+    display: block;
 }
 
 .message.error {
     background: #f8d7da;
     color: #721c24;
     border: 1px solid #f5c6cb;
+    display: block;
 }
-/* Add this to your existing CSS file */
 
 .show-password {
     display: flex;
     align-items: center;
+    gap: 8px;
     margin-bottom: 15px;
 }
 
 .show-password input {
     width: auto;
-    margin-right: 8px;
     margin-bottom: 0;
-}
-
-.show-password label {
-    color: #555;
-    font-size: 14px;
-    cursor: pointer;
 }
