@@ -8,12 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <!-- Login Form - Visible by default -->
+        <!-- Login Box -->
         <div class="form-box active" id="loginBox">
             <h2>Login</h2>
             <form id="loginForm">
-                <input id="loginEmail" type="email" placeholder="Email" required />
-                <input id="loginPassword" type="password" placeholder="Password" required />
+                <input id="loginEmail" type="email" placeholder="Email" required>
+                <input id="loginPassword" type="password" placeholder="Password" required>
                 
                 <div class="show-password">
                     <input type="checkbox" id="showPasswordLogin">
@@ -21,18 +21,18 @@
                 </div>
                 
                 <button type="submit">Login</button>
-                <p class="switch-text">Don't have account? <span class="switch-link" id="showRegister">Register</span></p>
+                <p>Don't have account? <span id="showRegister">Register</span></p>
             </form>
             <div id="loginMessage" class="message"></div>
         </div>
 
-        <!-- Register Form - Hidden by default -->
+        <!-- Register Box -->
         <div class="form-box" id="registerBox">
             <h2>Register</h2>
             <form id="registerForm">
-                <input id="name" type="text" placeholder="Full Name" required />
-                <input id="email" type="email" placeholder="Email" required />
-                <input id="password" type="password" placeholder="Password" required />
+                <input id="name" type="text" placeholder="Full Name" required>
+                <input id="email" type="email" placeholder="Email" required>
+                <input id="password" type="password" placeholder="Password" required>
                 
                 <div class="show-password">
                     <input type="checkbox" id="showPasswordRegister">
@@ -46,7 +46,7 @@
                 </select>
                 
                 <button type="submit">Register</button>
-                <p class="switch-text">Already have account? <span class="switch-link" id="showLogin">Login</span></p>
+                <p>Already have account? <span id="showLogin">Login</span></p>
             </form>
             <div id="registerMessage" class="message"></div>
         </div>
